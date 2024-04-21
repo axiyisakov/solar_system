@@ -16,7 +16,7 @@ abstract final class AppTextStyles {
     Color? color,
     double? fontSize,
   }) =>
-      GoogleFonts.bungeeSpice(
+      GoogleFonts.ubuntu(
         fontSize: 24,
         color: color,
         fontWeight: FontWeight.w400,

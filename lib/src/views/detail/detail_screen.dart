@@ -8,13 +8,20 @@
 *===============================================================================
 */
 import 'package:flutter/material.dart';
+import 'package:solar_system/src/data/models/planet_enum.dart';
 import 'package:solar_system/src/views/detail/detail_view.dart';
 
 class DetailScreen extends StatelessWidget {
-  const DetailScreen({super.key});
+  final PlanetEnum planet;
+  const DetailScreen({
+    super.key,
+    required this.planet,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return const DetailsView();
+    return DetailsView(
+      planet: planet,
+    );
   }
 }
